@@ -3,9 +3,9 @@ import express from 'express';
 import teacherRouter from './Routing/teacherRouter.js';
 //import studentRouter from './Routing/students/students.js';
 import studentDBRouter from './Routing/studentsRouter.js';
-// import todosRouter from './Routing/students/todo.js'
 import connectToDb from './db-utils/mongo.connection.js';
 import mongooseConnect from './db-utils/mongoose-connection.js';
+import todosRouter from './Routing/todo.js';
 
 const server=express();
 await connectToDb()
